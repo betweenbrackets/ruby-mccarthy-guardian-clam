@@ -1,0 +1,124 @@
+<!--
+  In the past, the DOCTYPE was needed to specify HTML versions.
+  As of HTML5, providing `html` is sufficient.
+  It is somewhere between a proper HTML tag, and an HTML comment.
+-->
+<!DOCTYPE html>
+<!-- Add the appropriate language for your site -->
+<html lang="en">
+<head>
+  <!--
+    UTF-8 is a character set including many universal characters.
+    This is an essential tag for all websites, to avoid seeing
+    weird boxes like ▢▢▢
+  -->
+  <meta charset="utf-8">
+  <!--
+    This critical tag ensures that items on the screen scale
+    correctly on mobile devices. Without this tag, content may
+    appear VERY tiny.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Set your name and a brief description.
+    Used by search engines.
+  -->
+  <meta name="author" content="Your name">
+  <meta name="description" content="Brief description">
+  <!--
+    `og` stands for Open Graph, which is a protocol for how your
+    website appears when linked to from another site. These tags
+    are critical to ensuring your site gains an appropriate card
+    when sharing on social media.
+  -->
+  <!-- Insert OG Markup -->
+  <meta property="og:title" content="Ruby McCarthy | The Guardian Clam of the Mastodon Tree" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="The Guardian Clam of the Mastodon Tree">
+  <meta property="og:image" content ="images/guardian-clam-mastodon-tree.png" />
+  <meta property="og:description" content="A poem by Ruby McCarthy"/>
+  <!--
+    `twitter` is similar to Open Graph, but specific to Twitter.
+    There are multiple card types you can choose from.
+    Learn more on Twitter's documentation:
+    https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="The opening poem verses">
+  <!-- Include one or more CSS files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  
+  <!-- FONT -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+  
+  <!--
+    A favicon is the small picture that shows up in the browser's
+    tab. Historically, these used a proprietary ".ico" format, and
+    you needed to provide many different sizes.
+    Happily, you can now provide a single vector graphic in SVG
+    format. It will scale to any size, and still look crisp.
+  -->
+  <link rel="icon" type="image/svg+xml" href="images/mountain-light.svg">
+  
+  <!-- This title shows up in the page's tab, next to the favicon -->
+  <title>Ruby McCarthy | The Guardian Clam of the Mastodon Tree</title>
+</head>
+<body>
+ <!-- Primary Page Layout -->
+  <main class="container">
+    <div class="row">
+      <div class="two-third column" style="margin-top: 25%">
+        <h4>The Guardian Clam of the Mastodon Tree</h4>
+        <p class = "mountain">The Guardian Clam of the Mastodon Tree, <br/>
+          A hollowed cottonwood by the sea, <br/>
+          <br/>
+          That did not speak when called upon <br/>
+          That did not speak when called upon <br/>
+          That did not speak when called upon <br/>
+          <br/>
+          And the sea went terribly wrong <br/>
+          Shoved where swayed <br/>
+          Wove where waved <br/>
+          Quickened, slickened, thickened <br/>
+          <br/>
+          The Mastodon asked, <br/>
+          "What have you learned through guarding me?" <br/>
+          "To speak only when necessary"<br/>
+          "And how might you reach the sea?"<br/>
+          <br/>
+          "But the sea's too big" <br/>
+          "No bigger than a tear" <br/>
+          "But the sea's too wide" <br/>
+          "No wider than fear" <br/>
+          "But the sea cannot hear" <br/>
+          "Only when you do not speak" <br/>
+          <br/>
+          The Guardian Clam of the Mastodon Tree, <br/>
+          A hollowed cottonwood by the sea, <br/>
+          Opened bigger than a tear <br/>
+          Opened wider than fear <br/>
+          Singing <br/>
+          And in flowed the sea <br/>
+          By necessity washed clean <br/>
+        </p>
+      </div>
+      <section style = "text-align: center;">
+        <p>Written by Ruby McCarthy <br/>
+        Published by <i>Rougarou!</i> <br/>
+        Copyright <script type="text/javascript">
+          document.write(new Date().getFullYear());</script> <br>
+        All rights reserved
+      </p>
+      </section>
+    </div> <!-- close of row -->
+  </main> <!-- close of container  -->
+  <!-- If necessary, include JS -->
+  <script src="script.js"></script>
+<!-- End Document --> 
+</body>
+</html>
